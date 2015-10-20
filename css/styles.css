@@ -31,8 +31,8 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: #fff;
-  color: #000;
+  background: white;
+  color: black;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -235,13 +235,10 @@ button {
 .title-wrapper {
   margin: 0 auto;
   font-size: 25px;
-  color: #fff;
+  color: white;
   font-weight: lighter;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   width: 330px; }
-
-.font-little {
-  font-size: 20px; }
 
 .header-main {
   width: 100%;
@@ -249,19 +246,21 @@ button {
   padding-top: 25px; }
 
 .logo-image {
-  width: 8%;
-  margin-left: 75px; }
+  width: 10%;
+  margin-left: 30px; }
 
 .title {
-  float: right;
-  width: 13%;
-  text-align: center;
-  font-family: "Macondo", Arial, sans-serif;
   font-size: 35px;
+  width: 14%;
+  float: right;
   color: #f7c911;
-  margin-right: 75px;
-  margin-top: 0px;
+  font-family: "Macondo", Arial, sans-serif;
+  margin: 0;
+  text-align: center;
   font-weight: lighter; }
+
+.font-little {
+  font-size: 25px; }
 
 .list-letter {
   list-style: none;
@@ -278,18 +277,18 @@ button {
   font-size: 20px;
   font-family: "Laila", Arial, sans-serif;
   cursor: pointer;
-  background: #fff; }
+  background: white; }
 
 .list-button-item {
   display: inline-block;
   width: 21%; }
 
 .button-level {
-  color: #fff; }
+  color: white; }
 
 .button-start {
   background: #f7c911;
-  color: #1A1A1A;
+  color: #1a1a1a;
   margin-top: 100px; }
   .button-start:hover {
     text-decoration: underline; }
@@ -304,7 +303,7 @@ button {
   background: #8db73b; }
 
 .select {
-  background: #fff;
+  background: white;
   color: #f7c911;
   font-weight: bold; }
 
@@ -319,25 +318,25 @@ button {
 
 .content-left {
   width: 40%;
-  margin: 0;
   display: inline-block;
-  margin-right: 100px; }
+  margin-right: 100px;
+  margin: 0; }
 
 .list-word {
   width: 100%; }
 
 .list-word-item {
+  border-bottom: 4px solid #f7c911;
   display: inline-block;
   vertical-align: top;
   width: 4%;
-  border-bottom: 4px solid #f7c911;
   margin: 10px;
   margin-bottom: 40px; }
 
 .title-letter {
   visibility: collapse;
   font-size: 30px;
-  color: #fff;
+  color: white;
   margin: 5px; }
 
 .content-right {
@@ -356,19 +355,18 @@ button {
   top: 117px;
   left: 335px;
   padding: 50px;
-  background: #fff;
+  background: white;
   display: none; }
   .content-popup .logo-image {
-    width: 12%;
-    left: -40px;
+    width: 16%;
+    left: -7px;
     top: 19px;
     position: absolute; }
   .content-popup .title {
     position: absolute;
-    top: 15px;
-    right: -50px;
-    width: 17%;
-    font-size: 30px; }
+    right: 20px;
+    top: 25px;
+    width: 25%; }
 
 .content-info {
   margin-top: 85px;

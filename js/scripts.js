@@ -127,16 +127,16 @@ var Game=(function(){
     function endGame(intentos, letter_word){
         var content_message="";
         if(letter_word === arreglo_palabra.length){
-            content_message='<div class="content-message"><img class="logo-image" src="img/logo.png" alt=""><h2 class="title">J<span class="font-little">UEGO</span> A<span class="font-little">HORCADO</span></h2><div class="content-info"><h1 class="title-message">Felicidades Ganaste!!!</h1><p class="subtitle-message">La Palabra era '+palabraActual.toUpperCase()+'</p><button class="button-message" onclick="Game.reloadPage()">Volver a Jugar</button></div></div>';
+            content_message='Felicidades Ganaste!!!';
             document.getElementsByClassName("opacity-content")[0].style.opacity="0.1";
             document.getElementById("popup").style.display="block";
         }
         if(intentos === 9){
-            content_message='<div class="content-message"><img class="logo-image" src="img/logo.png" alt=""><h2 class="title">J<span class="font-little">UEGO</span> A<span class="font-little">HORCADO</span></h2><div class="content-info"><h1 class="title-message">Que Mal Perdiste!!!</h1><p class="subtitle-message">La Palabra era '+palabraActual.toUpperCase()+'</p><button class="button-message" onclick="Game.reloadPage()">Volver a Jugar</button></div></div>';
+            content_message="Que Mal Perdiste!!!"
             document.getElementsByClassName("opacity-content")[0].style.opacity="0.1";
             document.getElementById("popup").style.display="block";
         }
-        document.getElementById("popup").innerHTML=content_message;
+        document.getElementById("popup").innerHTML='<div class="content-message"><img class="logo-image" src="img/logo.png" alt=""><h1 class="title">J<span class="font-little">UEGO</span> A<span class="font-little">HORCADO</span></h1><div class="content-info"><h1 class="title-message">'+content_message+'</h1><p class="subtitle-message">La Palabra era '+palabraActual.toUpperCase()+'</p><button class="button-message" onclick="Game.reloadPage()">Volver a Jugar</button></div></div>';;
         if(content_message != ""){
             document.getElementsByClassName("title-message")[0].style.color=color;
         }
